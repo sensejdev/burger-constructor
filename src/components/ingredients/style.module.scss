@@ -1,0 +1,29 @@
+.tabs {
+  display: flex;
+}
+
+.body {
+  min-height: 716px;
+  overflow: auto;
+  scrollbar-color: #8585ad #2f2f37;
+  scrollbar-width: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #2f2f37;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #8585ad;
+  }
+}
+
+.block {
+  display: grid;
+  grid-template-columns: repeat(2, 272px);
+  column-gap: 24px;
+  row-gap: 32px;
+}
